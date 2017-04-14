@@ -1,0 +1,25 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.art-box {
+  display: inline-flex;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: grey;
+  padding: 50px;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+// .image-box {
+//   display: inline-flex;
+//   width: 500px;
+//   height: 200px;
+//   // margin-top: 100px;
+//   flex-direction: column;
+//   justify-content: center;
+//   text-align: center;
+//
+// }

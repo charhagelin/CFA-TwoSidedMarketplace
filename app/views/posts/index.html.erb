@@ -1,0 +1,25 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<div class= "art-box">
+<table>
+  <tbody>
+    <% @posts.each do |post| %>
+
+      <td> humbnail of post</td>
+      <tr><td><%= post.title %></td></tr>
+      <tr><td><%= post.description %></td></tr>
+      <tr><td><%= link_to 'Show', post %></td></tr>
+      <tr><td><%= link_to 'Edit', edit_post_path(post) %></td></tr>
+      <tr><td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td></tr>
+
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+
+<%= link_to 'New Post', new_post_path %>
+</div>
