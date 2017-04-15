@@ -3,21 +3,24 @@
 
 <h1>Posts</h1>
 
-<div class= "art-box">
-<table>
-  <tbody>
+<div id="wrapper">
+	<div id="columns">
+
     <% @posts.each do |post| %>
-
-      <td> humbnail of post</td>
-      <tr><td><%= post.title %></td></tr>
-      <tr><td><%= post.description %></td></tr>
-      <tr><td><%= link_to 'Show', post %></td></tr>
-      <tr><td><%= link_to 'Edit', edit_post_path(post) %></td></tr>
-      <tr><td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td></tr>
-
+    <div class= "pin">
+      <%= image_tag post.image.url (:small) %>
+      <br>
+      <%= post.title %>
+      <br>
+      <%= post.description %>
+      <br>
+      <%= link_to 'Show', post %>
+      <%= link_to 'Edit', edit_post_path(post) %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
     <% end %>
-  </tbody>
-</table>
+</div>
+</div>
 </div>
 <br>
 
