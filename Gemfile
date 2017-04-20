@@ -24,6 +24,11 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'carrierwave', '~> 1.0'
 gem "mini_magick"
+gem "rolify"
+gem "pundit"
+gem "font-awesome-rails"
+gem 'stripe'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
