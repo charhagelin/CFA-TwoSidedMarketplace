@@ -2,6 +2,8 @@ class CartItemsController < ApplicationController
   before_action :set_cart_item, only: [:show, :edit, :update, :destroy]
 
 
+
+
   # GET /cart_items
   # GET /cart_items.json
   def index
@@ -9,7 +11,6 @@ class CartItemsController < ApplicationController
     @cart_items = current_user.cart_items
 
     @total = 0
-
 
   end
 

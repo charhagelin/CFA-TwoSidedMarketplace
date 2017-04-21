@@ -20,14 +20,12 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <a href = "/cart_items">
-        <button type="button" class="btn btn-info" aria-label="Left Align">
-        <span class="fa fa-shopping-cart" aria-hidden="true"></span>
-        <span class="badge"> <%= @cart_items.size %></span>
-        </button>
-      </a>
-
-
+        <% if user_signed_in? %>
+          <a href="/cart_items" type="button" class="btn btn-info" aria-label="Left Align">
+            <span class="fa fa-shopping-cart" aria-hidden="true"></span>
+            <span class="badge"> <%= @cart_items.size %></span>
+          </a>
+        <% end %>
 
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account <span class="caret"></span></a>

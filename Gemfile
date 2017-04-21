@@ -28,6 +28,7 @@ gem "rolify"
 gem "pundit"
 gem "font-awesome-rails"
 gem 'stripe'
+gem 'simple_form'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
