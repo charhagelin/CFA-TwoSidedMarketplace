@@ -17,6 +17,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
+    authorize @post
     @post = Post.new
     @cart_items = current_user.cart_items
   end
@@ -28,6 +29,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
+    authorize @post
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     @cart_items = current_user.cart_items
@@ -48,6 +50,8 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
   def update
+
+    authorize @post
     respond_to do |format|
       if @post.update(post_params)
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
@@ -62,6 +66,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
+    authorize @post
     @post.destroy
     respond_to do |format|
       format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
