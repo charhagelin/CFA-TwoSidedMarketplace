@@ -2,43 +2,34 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .shopping-cart {
-  background-image: url("http://res.cloudinary.com/charhagelin/image/upload/v1492680144/pencil_uqpbtp.jpg");
+  background-image: url("http://res.cloudinary.com/charhagelin/image/upload/v1492777985/water_color_red_copy_v6710q.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
   height: 800px;
-  margin-top: -20px;
+  // margin-top: -20px;
 }
 
 .cart-content {
-  background-color: #f0f0f0;
-  border-radius: 15px;
-  border: 1px solid #9ED1C8;
+  background-image: url("http://thesingingwalrus.com/wp-content/uploads/2015/03/paper-texture1.jpg");
+  // background: -webkit-linear-gradient(#ffffff, #ffddd6);
+  border-radius: 5px;
+  // border: 1px solid #9ED1C8;
   padding: 50px;
-  margin-top: -30px;
-  box-shadow: -10px 10px 8px #464747;
-
-
-}
-.title-box {
-  display: inline-flex;
-  width: 600px;
-  height: 100px;
-  border: 1px solid #9ED1C8;
-  margin: 10px;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  border-radius: 15px;
-  background-color: #f0f0f0;
-  z-index: 2;
-
-}
-.title-box h1 {
-  color: #9ED1C8;
-  text-align: center;
-  font-family: 'Knewave', cursive;
   margin-top: 50px;
+  box-shadow: -5px 5px 12px #464747;
+}
+
+.title-box h1 {
+  color: #5f5e5e;
+  text-align: center;
+  font-family: 'Palanquin', sans-serif;
+  margin-top: 150px;
   font-size: 4em;
   // padding: 10px;
+}
+
+.add_to_cart {
+  margin-top: 140px;
+  
 }

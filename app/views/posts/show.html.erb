@@ -1,33 +1,40 @@
-<div class="container">
-<p id="notice"><%= notice %></p>
+
+<div class="random_img">
+    <%= image_tag randomized_background_image %>
+  </div>
+  <div class="container">
+  <div class="post-show">
+    <p id="notice"><%= notice %></p>
 
 
-<%= image_tag @post.image.url (:large) %>
-<hr>
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+    <%= image_tag @post.image.url (:large) %>
 
-<p>
-  <strong>Price:</strong>
-  <%= number_to_currency(@post.price) %>
-</p>
+    <hr>
+    <p>
+      <strong>Title:</strong>
+      <%= @post.title %>
+    </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @post.description %>
-</p>
+    <p>
+      <strong>Price:</strong>
+      <%= number_to_currency(@post.price) %>
+    </p>
 
-
-<p>
-  <strong>User:</strong>
-  <%= @post.user %>
-</p>
-
-<%= link_to 'Add to cart', new_cart_item_path(post_id: @post.id), class: "btn btn-show" %>
+    <p>
+      <strong>Description:</strong>
+      <%= @post.description %>
+    </p>
 
 
-<%= link_to 'Edit', edit_post_path(@post) if current_user.admin? %> |
-<%= link_to 'Back', posts_path, class: "btn btn-default" %>
+    <p>
+      <strong>User:</strong>
+      <%= @post.user %>
+    </p>
+    
+    <%= link_to 'Add to cart', new_cart_item_path(post_id: @post.id), class: "btn btn-show" %>
+
+
+    <%= link_to 'Edit', edit_post_path(@post) if current_user.admin? %> |
+    <%= link_to 'Back', posts_path, class: "btn btn-default" %>
+  </div>
 </div>

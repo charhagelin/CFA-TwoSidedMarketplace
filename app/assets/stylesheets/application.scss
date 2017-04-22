@@ -20,3 +20,55 @@
 body {
   background-color: #f0f0f0;
 }
+
+.navbar-right {
+  padding-top: -10px;
+  margin-top: -20px;
+
+}
+
+.navbar-nav {
+  margin-top: -5px;
+}
+
+.fa-shopping-cart {
+  margin-top: -10px;
+}
+
+.border-form-div {
+padding-top: 150px;
+  margin-top: 50px;
+  margin-left: 35%;
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  // margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+
+.sign_up {
+  background-image: url("http://res.cloudinary.com/charhagelin/image/upload/v1492832793/collage_w257fm.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 800px;
+  position:relative;
+  padding-top: 150px;
+}

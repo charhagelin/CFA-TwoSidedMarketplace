@@ -1,8 +1,11 @@
 <div class="post-index">
 <div class="container">
+
 <p id="notice"><%= notice %></p>
 
 <h1>Gallery</h1>
+
+
 
 <%= link_to 'New Post', new_post_path, class: "btn btn-default" if current_user.admin?%>
 <div id="wrapper">
@@ -13,8 +16,8 @@
       <p>
     <div class="img">  <%= image_tag post.image.url (:small) %> </div>
     <hr>
-      <h4><%= post.title %></h4>
-			<p><%= number_to_currency(post.price) %> </p>
+      <h4><strong><%= post.title %></strong></h4>
+			<p><strong><%= number_to_currency(post.price) %> </strong></p>
       <br>
       <%= post.description %>
     </p>

@@ -4,9 +4,18 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
     @cart_items = current_user.cart_items
-  end
+    @posts = Post.all
+
+    @posts = Post.all
+     if params[:search]
+       @posts = Post.search(params[:search]).order("created_at DESC")
+     else
+       @posts = Post.all.order('created_at DESC')
+     end
+   end
+
+
 
   # GET /posts/1
   # GET /posts/1.json
@@ -24,6 +33,7 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    @cart_items = current_user.cart_items
   end
 
   # POST /posts
