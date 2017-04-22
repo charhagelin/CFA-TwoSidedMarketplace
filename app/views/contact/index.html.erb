@@ -1,6 +1,4 @@
-<h1>Contact me</h1>
-<p>Send me something</p>
-
+<div class="contact_form">
 <div class="col-md-6">
 
   <% if flash[:notice] %>
@@ -12,10 +10,20 @@
 
 <h1>Contact Us</h1>
 
-<%= simple_form_for :contact do |f| %>
-    <%= f.input :email, placeholder: 'type email here' %>
-    <%= f.input :message, placeholder: 'type message here', :as => :text %>
-    <%= f.button :submit, "Send" %>
-<% end %>
+  <%= form_for :contact do |f| %>
+  <div class="field">
+      <%= f.label :Email %> <br>
+      <%= f.text_field :email, placeholder: 'type email here' %>
+  </div>
+  <div class="field">
+      <%= f.label :Message %> <br>
+      <%= f.text_area :message, placeholder: 'type message here', :rows => 10, style: 'width:100%;' %>
+  </div>
+  <br>
+  <div class="actions">
+    <%= f.submit "send", class: "btn btn-default" %>
+  </div>
+  <% end %>
 
+</div>
 </div>

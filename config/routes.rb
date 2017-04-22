@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   root 'pages#index'
-  get 'schooldashboard', to: 'pages#school_dashboard'
-  get 'userdashboard', to: 'pages#user_dashboard'
+  get 'admindashboard', to: 'admin_dashboard#index'
+  # get 'userdashboard', to: 'pages#user_dashboard'
   get 'addtocart', to: 'cart_items#index'
   get 'shoppingcart', to: 'user_dashboard#shopping_cart'
 

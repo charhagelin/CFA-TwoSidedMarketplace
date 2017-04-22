@@ -1,2 +1,0 @@
-module SchoolDashboardHelper
-end
