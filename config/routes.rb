@@ -1,14 +1,19 @@
 Rails.application.routes.draw do
 
 
-  resources :cart_items do
-    member do
-      resources :charges
+    resources :cart_items do
+      member do
+        resources :charges
+      end
     end
-  end
 
   resources :posts
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
+  delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+    end
+  devise_scope :user do
+    end
+
 
   root 'pages#index'
   get 'admindashboard', to: 'admin_dashboard#index'
@@ -18,6 +23,7 @@ Rails.application.routes.draw do
 
   get 'contact', to: "contact#index"
   post 'contact', to: "contact#mail"
+
 
   # get 'gallery', to: posts_path
 

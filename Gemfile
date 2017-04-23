@@ -29,6 +29,7 @@ gem "pundit"
 gem "font-awesome-rails"
 gem 'stripe'
 gem 'simple_form'
+gem 'omniauth-facebook'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
