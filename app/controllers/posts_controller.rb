@@ -26,7 +26,6 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    authorize @post
     @post = Post.new
     @cart_items = current_user.cart_items
   end
@@ -39,7 +38,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    authorize @post
+    
     @post = Post.new(post_params)
     @post.user_id = current_user.id
     @cart_items = current_user.cart_items
