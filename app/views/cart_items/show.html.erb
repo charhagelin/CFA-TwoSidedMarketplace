@@ -1,14 +1,13 @@
-<p id="notice"><%= notice %></p>
+<div class="background_item">
 
-<p>
-  <strong>User:</strong>
-  <%= @cart_item.user.email %>
-</p>
+<div class="item_show">
 
-<p>
-  <strong>Post:</strong>
-  <%= @cart_item.post.title %>
-</p>
+<p>thanks for supporting  </p>
+<p> do you wish to continue shopping? </p>
 
-<%= link_to 'Edit', edit_cart_item_path(@cart_item) %> |
-<%= link_to 'Back', cart_items_path %>
+<%= link_to 'Yes, take me back', posts_path, class: "btn-black" %>
+<br>
+<%= link_to "No, I'd like to pay", cart_items_path, class: "btn-black" %>
+
+</div>
+</div>

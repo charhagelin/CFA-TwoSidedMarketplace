@@ -6,7 +6,8 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 800px;
+  height: 850px;
+
   // margin-top: -20px;
 }
 
@@ -18,6 +19,7 @@
   padding: 50px;
   margin-top: 50px;
   box-shadow: -5px 5px 12px #464747;
+  margin-bottom: 140px;
 }
 
 .title-box h1 {
@@ -32,4 +34,87 @@
 .add_to_cart {
   margin-top: 140px;
 
+}
+
+.item_show {
+  padding-top: 20px;
+  // padding-left: 125px;
+  margin-top: 200px;
+  margin-left: 35%;
+  background:  -webkit-linear-gradient(right, #C291CE , #C8B2CE);
+  // background:  -webkit-linear-gradient(right, #9ED1C8 , #BCEDE4);
+  // background-color: #9ED1C8;
+  height: 300px;
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: -5px 5px 12px #464747;
+  position: relative;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.background_item {
+  padding-top: 50px;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/11/ef/2b/11ef2bd957408f08e29849d5dcd1bbd8.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 800px;
+
+}
+
+.btn-black {
+
+border-radius: 3px;
+border-style: solid;
+border-width: 0 0 2px;
+box-shadow: 0 10px 5px -10px rgba(0, 0, 0, 0.5);
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-size: 20px;
+padding: 7px 20px;
+text-align: center;
+text-decoration: none;
+text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+margin-bottom: 10px;
+
+}
+.btn-black:hover {
+  color:black;
+}
+
+.btn-black {
+  background-color: #4a4948;
+  border-color: #000;
+  box-shadow: 0 12px 4px -12px rgba(0, 0, 0, 0.3);
+}
+
+.add_to_cart_wrapper {
+  padding-top: 50px;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/11/ef/2b/11ef2bd957408f08e29849d5dcd1bbd8.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 800px;
+}
+
+.add_to_cart {
+  padding-top: 70px;
+  // padding-left: 125px;
+  margin-top: 200px;
+  margin-left: 35%;
+  background:  -webkit-linear-gradient(right, #9ED1C8 , #BCEDE4);
+  // background-color: #9ED1C8;
+  height: 300px;
+  width: 450px;
+  border-radius: 5px;
+  box-shadow: -5px 5px 12px #464747;
+  position: relative;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  text-align: center;
 }

@@ -1,7 +1,9 @@
+<div class="add_to_cart_wrapper">
 <div class="add_to_cart">
-<h4>Do you wish to add this item to your cart?</h4>
+<p>Do you wish to add this item to your cart?</p>
 
 <%= render 'form', cart_item: @cart_item %>
 
-<%= link_to 'Back', cart_items_path, class: "btn btn-default" %>
+<%= link_to 'No, I changed my mind', posts_path, class: "btn-black" %>
+</div>
 </div>

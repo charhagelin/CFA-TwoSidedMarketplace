@@ -26,11 +26,6 @@
     </p>
 
 
-    <p>
-      <strong>User:</strong>
-      <%= @post.user %>
-    </p>
-    
     <%= link_to 'Add to cart', new_cart_item_path(post_id: @post.id), class: "btn btn-show" %>
 
 

@@ -24,8 +24,6 @@
         <td><div class="img">  <%= image_tag cart_item.post.image.url (:thumb) %> </div></td>
         <td><%= cart_item.post.title %></td>
         <td><%= number_to_currency(cart_item.post.price) %></td>
-        <td><% @total = cart_item.post.price + @total %></td>
-        <td><%= link_to 'Show', cart_item %></td>
         <td><%= link_to 'Remove from cart', cart_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
       </tr>

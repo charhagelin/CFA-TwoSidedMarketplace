@@ -7,10 +7,9 @@ class CartItemsController < ApplicationController
   # GET /cart_items
   # GET /cart_items.json
   def index
-    @cart_items = CartItem.all
+  #  @cart_items = CartItem.all
     @cart_items = current_user.cart_items
-
-    @total = 0
+    @total = current_user.cart_items.sum {|i| i.post.price}
 
   end
 
