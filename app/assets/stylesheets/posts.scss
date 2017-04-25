@@ -7,7 +7,7 @@
 	// background-position: center top;
 	background-repeat: repeat;
 	background-size: 100%;
-	height: 100%;
+	height: 1200px;
 	margin-top: 50px;
 
 }
@@ -74,3 +74,28 @@
 	float: right;
 	margin-right: 30px;
 }
+
+
+.new-post{
+	background-image: url("http://www.bureauofbetterment.com/wp-content/uploads/2012/06/feather-2.jpg");
+	background-repeat: repeat;
+	background-size: 100%;
+  padding-top: 150px;
+  margin-top: 110px;
+  margin-left: 27%;
+  max-width: 400px;
+	height: 500px;
+  padding: 19px 29px 29px;
+  // margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+          box-shadow: 0 1px 2px rgba(0,0,0,.05);
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: purple;
+	font-weight: bold;
+				}

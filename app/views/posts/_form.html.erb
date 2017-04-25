@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %>
+    <%= f.label :title %> <br>
     <%= f.text_field :title %>
   </div>
 
   <div class="field">
-  <%= f.label :price %>
+  <%= f.label :price %> <br>
   <%= f.number_field :price %>
 </div>
 
   <div class="field">
     <%= f.label :description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :rows => 7, style: 'width:100%;'  %>
   </div>
 
   <div class="field">
@@ -37,6 +37,6 @@
   </div> -->
 
   <div class="actions">
-    <%= f.submit "submit artwork" %>
+    <%= f.submit "submit artwork", class: "btn-black" %>
   </div>
 <% end %>
