@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
+
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -31,6 +31,7 @@ gem "font-awesome-rails"
 gem 'stripe'
 gem 'simple_form'
 gem 'omniauth-facebook'
+gem 'codeclimate', '~> 0.62.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

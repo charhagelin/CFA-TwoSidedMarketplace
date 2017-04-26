@@ -1,7 +1,7 @@
 class ContactController < ApplicationController
   def index
     @cart_items = current_user.cart_items
-    end
+  end
 
     def mail
 
@@ -18,6 +18,6 @@ class ContactController < ApplicationController
           redirect_to '/contact'
         end
 
-  end
-  end
+      end
+    end
   end
